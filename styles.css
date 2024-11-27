@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial Nova Light', sans-serif;
     line-height: 1.6;
     margin: 0; 
     padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 header.hero {
-    background-image: url("images/tonnyBack11.jpg"); 
+    background-image: url("images/pic_backgroundre1.png"); 
     background-size: cover;
     background-position: center;
     height: 100vh; 
@@ -25,7 +25,7 @@ header.hero {
 }
 
 .hero-content h1 {
-    font-family: 'Algerian', sans-serif;
+    font-family: 'Trade Gothic Next Heavy', sans-serif;
     font-size: 4em; 
     margin: 0;
 }
