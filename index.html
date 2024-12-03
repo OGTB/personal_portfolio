@@ -5,16 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonny Ogaa - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add slideshow styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .img-slide {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .dot-container {
+            text-align: center;
+            padding: 10px;
+            background: #ddd;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="hero">
+        <header class="hero">
         <div class="hero-content">
-            <h1><b><u>TONNY BRIAN OGAA</u></b></h1>
-            <h2>Data Analyst | Python Developer | Risk and Compliance Expert</h2>
+            <h1><b>---------------TONNY BRIAN OGAA------------------</b></h1>
+            <h2><i>Data Analyst | Business Intelligence Specialist | AML Analyst | Risk & Compliance Analyst</i></h2>
             <h3><a href="#work-history" class="btn">View Work History</a></h3>
         </div>
     </header>
+    <div class="slideshow-container">
+        <div class="slides fade">
+            <img src="images/1.jpg" class="img-slide" alt="Image 1">
+        </div>
+        <div class="slides fade">
+            <img src="images/2.jpg" class="img-slide" alt="Image 2">
+        </div>
+        <div class="slides fade">
+            <img src="images/3.jpg" class="img-slide" alt="Image 3">
+        </div>
+        <div class="slides fade">
+            <img src="images/4.jpg" class="img-slide" alt="Image 4">
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
 
     <nav class="navbar">
         <ul>
@@ -132,6 +214,10 @@
             <h2 class="certifications-">Please click to view the certificates - More certifications can be found here on my <a href="https://www.linkedin.com/in/ogaa/details/certifications/" target="_blank">linkedin</a> page</h2>
             <ul class="certifications-list">
                 <li>
+                    <a href="https://coursera.org/verify/YZRXZUOTO7HZ" target="_blank">Supervised Machine Learning: Regression and
+                        Classification</a>
+                </li>
+                <li>
                     <a href="https://www.udemy.com/certificate/UC-f5948c84-5a39-4a08-aa58-4ca154812009/" target="_blank">Anti-Money Laundering (AML), AML Policies, AML KYC & AML Compliance</a>
                 </li>
                 <li>
@@ -160,5 +246,38 @@
         </div>
         <p>Email: <a href="mailto:ogaatonny@gmail.com">ogaatonny@gmail.com</a></p>
     </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Automatic slideshow
+        setInterval(function() {
+            plusSlides(1);
+        }, 3000); // Change image every 5 seconds
+    </script>
 </body>
 </html>

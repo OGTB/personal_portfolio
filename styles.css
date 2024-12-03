@@ -11,6 +11,22 @@ body {
     color: #333; 
 }
 
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* You can set a fixed width if needed */
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.img-slide {
+    width: 100%; /* Makes the image take the full width of the container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 500px; /* Optional: Set a maximum height to avoid large images */
+}
+
 header.hero {
     background-image: url("images/pic_backgroundre1.png"); 
     background-size: cover;
@@ -25,7 +41,7 @@ header.hero {
 }
 
 .hero-content h1 {
-    font-family: 'Trade Gothic Next Heavy', sans-serif;
+    font-family: 'Bauhaus 93';
     font-size: 4em; 
     margin: 0;
 }
