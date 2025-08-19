@@ -1,3 +1,5 @@
 # My Personal Portfolio
+### This is just my personal profile
 
 Welcome to my personal portfolio! I am Tonny, Data Profesional and Risk & Compliance Expert. This portfolio showcases my projects and skills.
+I'm passionate about using data to protect financial systems from crime and abuse. With a strong foundation in compliance and a sharp analytical mindset, I specialize in leveraging data to uncover hidden risks, detect suspicious patterns, and ensure regulatory integrity across financial operations. My work sits at the intersection of anti-money laundering (AML), counter-terrorist financing (CTF), sanctions screening, and regulatory compliance. I use advanced data analytics, machine learning models, and investigative techniques to monitor transactions, assess customer risk, and ensure institutions meet both local and global compliance standards. Whether it's building robust risk models, automating compliance workflows, or conducting forensic data reviews, I bring precision, insight, and integrity to every challenge. My mission is simple: to make financial systems safer, smarter, and more transparent—one dataset at a time.
