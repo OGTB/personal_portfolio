@@ -4,280 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonny Ogaa</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add slideshow styles */
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            margin: auto;
-        }
-
-        .slides {
-            display: none;
-        }
-
-        .img-slide {
-            width: 100%;
-            height: auto;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .dot-container {
-            text-align: center;
-            padding: 10px;
-            background: #ddd;
-        }
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-    </style>
+    <meta name="description" content="The professional portfolio of Tonny Ogaa, showcasing skills and projects.">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-        <header class="hero">
-        <div class="hero-content">
-            <h1><b>TONNY BRIAN OGAA</b></h1>
-            <h2><i>Data Analyst | Business Intelligence Specialist | AML Analyst | Risk & Compliance Analyst</i></h2>
-            <h3><a href="#work-history" class="btn">View Work History</a></h3>
-        </div>
-    </header>
-    <div class="slideshow-container">
-        <div class="slides fade">
-            <img src="images/1.jpg" class="img-slide" alt="Image 1">
-        </div>
-        <div class="slides fade">
-            <img src="images/2.jpg" class="img-slide" alt="Image 2">
-        </div>
-        <div class="slides fade">
-            <img src="images/3.jpg" class="img-slide" alt="Image 3">
-        </div>
-        <div class="slides fade">
-            <img src="images/4.jpg" class="img-slide" alt="Image 4">
-        </div>
-        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-        <button class="next" onclick="plusSlides(1)">&#10095;</button>
-    </div>
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#accomplishments">Accomplishments</a></li>
-            <li><a href="#work-history">Work History</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+       <h2>TONNY BRIAN OGAA</h2><p>Business Intelligence | Data Analysis & Visualization | Data Governance & Management | Data Science & Analytics <br><u> Anti-financial Crime (AML/CFT/CPF, ABC, Sanctions, Fraud) | (Geo)political Risk Analyst</u></br></p>
+    </header>
+
+
+<nav class="navbar">
+  <div class="navbar-brand">
+  <a href="#projects">
+    <img src="images/me1.jpg" alt="TBO Logo" class="logo-img">
+  </a>
+</div>
+
+  <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="navbar-links" id="navbar-links">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="gallery.html" target="_blank">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
     <main>
-        <section id="about" class="section">
-            <h2><u>Career Summary</u></h2>
-            <p>Dedicated Data Professional with extensive experience in Risk and Compliance in the mobile money industry | Fintech, currently working at <a href="https://www.network.ae/" target="_blank">Network International</a>. I possess proven expertise in executing compliance programmes such as, monitoring transactions for suspicious activity, conducting thorough investigations, and ensuring adherence to KYC and due diligence standards. I've previously worked in the same capacity at <a href="https://www.airtelkenya.com/" target="_blank">Airtel Kenya Limited</a>.</p>
-            <p>With a strong background as a Data Analyst, I leverage advanced skills in data manipulation and analysis, particularly using Python and various libraries like Pandas and Scikit-learn, to enhance the accuracy and efficiency of my investigations. My experience includes reporting to regulatory authorities, such as the Central Bank of Kenya (CBK), and assisting with compliance audits. I am currently pursuing knowledge in Machine Learning to further bolster my analytical capabilities and contribute to data-driven decision-making processes within my organization.</p>
-            <p>Known for my analytical acumen, attention to detail, and ability to provide actionable insights that drive informed business decisions, I am committed to upholding the highest standards of compliance and risk management in the financial sector.</p>
-            <p><i>My projects and certifications can be found <a href="https://github.com/OGTB/" target="_blank">here</a></i></p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p><i>
+                I'm passionate about using data to protect financial systems from crime and abuse. With a strong foundation in compliance and a sharp analytical mindset, I specialize in leveraging data to uncover hidden risks, detect suspicious patterns, and ensure regulatory integrity across financial operations.
+                My work sits at the intersection of anti-money laundering (AML), counter-terrorist financing (CTF), sanctions screening, and regulatory compliance. I use advanced data analytics, machine learning models, and investigative techniques to monitor transactions, assess customer risk, and ensure institutions meet both local and global compliance standards.
+                Whether it's building robust risk models, automating compliance workflows, or conducting forensic data reviews, I bring precision, insight, and integrity to every challenge. My mission is simple: to make financial systems safer, smarter, and more transparent—one dataset at a time.
+            </i></p>
         </section>
 
-        <section id="skills" class="section">
-            <h2><u>Skills & Strengths</u></h2>
-            <ul class="skills-list">
-                <li>Structured Query Language (SQL)</li>
-                <li>Data Analysis with Python (Pandas, NumPy, Scikit-learn, Advanced Excel Analysis)</li>
-                <li>R or Python statistical programming</li>
-                <li>Regulatory Compliance</li>
-                <li>Machine Learning</li>
-                <li>KYC & Due Diligence</li>
-                <li>Risk Mitigation</li>
-                <li>Regulatory Reporting</li>
-                <li>Training & Development</li>
-                <li>Data Visualization</li>
-                <li>Statistical Analysis and Model Building</li>
-                <li>Effective Communication</li>
-            </ul>
-        </section>
-
-        <section id="accomplishments" class="section">
-            <h2><u>Professional Accomplishments</u></h2>
-            <ul class="accomplishments-list">
-                <li>Successfully managed compliance audits by the Central Bank of Kenya (CBK) in November 2023 and January 2024, ensuring all regulatory requirements were met and significantly enhancing the organization's compliance posture.</li>
-                <li>Enhanced compliance monitoring programs which led to early detection and reporting of suspicious transactions, thereby effectively mitigating potential risks.</li>
-                <li>Established Data Quality Metrics: Created comprehensive data quality reports that identified trends and anomalies in the data governance framework, allowing the business to proactively address quality issues and improve data integrity.</li>
-                <li>Streamlined reporting processes and implemented automated systems that reduced turnaround time for compliance and business intelligence reports, enhancing operational efficiency.</li>
-                <li>Developed and delivered comprehensive compliance training programs to staff and agents, significantly improving their understanding of compliance requirements and fostering a culture of adherence to regulatory standards.</li>
-                <li>Automated incentive and commission computations with IT collaboration, achieving timely and accurate payments to sales teams and enhancing overall motivation and performance.</li>
-                <li>Conducted detailed analyses on suspicious transactions and prepared Suspicious Transaction Reports (STRs) for submission to the Financial Reporting Centre (FRC), thereby reinforcing the integrity of the financial system.</li>
-                <li>Reduced project report turnaround time as a BI Analyst Intern by streamlining processes and creating new, automated reporting systems, ultimately providing valuable insights that helped the company make informed business decisions.</li>
-            </ul>
-        </section>
-
-        <section id="work-history" class="section">
-            <h2><u>Work History</u></h2>
-            <div class="experience">
-                <h3><a href="https://www.network.ae/" target="_blank">Network International</a>, Nairobi, Kenya (10/2024 – Present)</h3>
-                <p><strong>AML Analyst</strong></p>
-                <ul>
-                    <li>Conduct in-depth investigations into high-risk customers, transactions, and accounts to identify suspicious activities.</li>
-                    <li>Conduct independent audit and compliance testing functions to review and assess the company for compliance with the AML Program and applicable law.</li>
-                    <li>Executed the annual compliance program and compliance monitoring program, providing insights to the data team for optimization of compliance measures.</li>
-                    <li>Automated processes associated with compliance and business intelligence reporting, improving overall efficiency.</li>
-                    <li>Collaborated with cross-functional teams to develop key datasets to answer fundamental business questions relevant to risk management.</li>
-                    <li>Utilize advanced data analysis tools, particularly Python, to analyze large volumes of financial data and detect patterns or anomalies.</li>
-                    <li>Monitor financial transactions in real-time to detect and escalate suspicious activities for further investigation.</li>
-                    <li>Prepare detailed reports of findings, identify trends, and make recommendations for remediation to ensure compliance with AML regulations.</li>
-                    <li>Perform Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) processes to verify customer identities and assess risk profiles.</li>
-                    <li>Stay updated on the latest AML regulations, industry trends, and emerging money laundering techniques through continuous learning.</li>
-                    <li>Conduct AML risk assessments at the jurisdictional, customer, and product and services levels.</li>
-                    <li>Use data analytical skills to perform risk-based measures in the systems for ongoing monitoring of transactions and activities through customers' accounts.</li>
-                    <li>AML training for appropriate personnel.</li>
-                </ul>
-
-                <h3><a href="https://www.airtelkenya.com/" target="_blank">Airtel Kenya Limited</a>, Nairobi, Kenya (09/2023 – 10/2024)</h3>
-                <p><strong>Compliance Executive Analyst Sr. Officer</strong></p>
-                <ul>
-                    <li>Assisted in the making and amending of policies and procedures to fit <a href="https://www.fatf-gafi.org/en/topics/fatf-recommendations.html" target="_blank">FATF recommendations</a>.</li>
-                    <li>Executed the annual compliance plan and monitoring program under the direction of the MLRO, ensuring general compliance with the Acts and Regulations such as POCAMLA and POTA.</li>
-                    <li>Performed AML screening in real-time and global coverage of PEP, Sanctions, and Watchlist Data.</li>
-                    <li>Identified and reported suspicious transactions and monitored patterns for unusual or fraudulent activity.</li>
-                    <li>Ensured strict adherence to Know Your Customer standards including a Customer Identification Program and Customer Due Diligence procedures reasonably designed to identify and verify all customers and, where applicable, beneficial owners, source of funds, and the nature and intended purpose of the business relationship, to the extent warranted by the risk of money laundering or terrorist financing or as required by regulation.</li>
-                    <li>Supported the design and delivery of compliance training programs for staff and agents.</li>
-                    <li>Conducted thorough analyses on compliance matters, assisting in weekly and monthly regulatory reporting.</li>
-                    <li>Maintained record keeping and reporting requirements, including those for cash transactions and records obtained pursuant to the Customer Identification Program, which are maintained for at least seven years after the termination of a customer relationship.</li>
-                </ul>
-
-                <h3>Data Analyst (09/2022 - 08/2023)</h3>
-                <p><strong>Airtel Money Kenya Limited, Nairobi, Kenya</strong></p>
-                <ul>
-                    <li>Collaborated with cross-functional teams to implement data-driven strategies, driving business growth and improving operational efficiency..</li>
-                    <li>Developed models and data analysis methods to extract meaningful insights, helping to identify customer preferences and sales trends.</li>
-                    <ol><u>Technologies Used</u></ol>
-                    <ol>Data Analysis Tools (e.g., Python, R, Excel)</ol>
-                    <ol>Data Visualization Tools (e.g., Tableau, Power BI)</ol>
-                    <li>Conducted exploratory data analysis to identify areas for process improvement leading to enhanced business efficiency.</li>
-                    <li>Calculated and reported monthly incentives, greatly motivating sales teams to exceed targets.</li>
-                    <li>Automated reporting processes with IT to improve operational efficiency.</li>
-                    <li>Analyzed transactional data to identify customer behavior trends, providing insights for marketing campaigns and product offerings.</li>
-                </ul>
-
-                <h3>Business Intelligence Analyst Intern (04/2022 - 08/2022)</h3>
-                <p><strong>Airtel Money Kenya Limited, Nairobi, Kenya</strong></p>
-                <ul>
-                    <li>Assisted in daily report computations and provided actionable insights to facilitate informed decision-making.</li>
-                    <li>Streamlined reporting processes, reducing project report turnaround time by automating systems.</li>
-                    <li>Conducted ad-hoc data analysis to support departments in their strategic initiatives.</li>
-                </ul>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid" style="display: flex; flex-wrap: wrap; gap: 24px;">
+            <article class="project" style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; max-width: 48%; text-align: center;">
+                <h3>public-holidays Analysis</h3>
+                <img src="images/holiday.jpg" alt="Screenshot of public-holidays Analysis project" style="width: 90%; height: 220px; object-fit: cover; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 18px;">
+                <p>
+                This data analysis project focus on analysing public holidays. The project likely aims to provide insights and trends about public holidays, enabling users to make informed decisions or predictions.
+                </p>
+                <p><strong>Technologies used:</strong> Python, Pandas, Matplotlib</p> 
+                <a href="https://www.kaggle.com/code/ogtb001/public-holidays-analysis" target="_blank">Source Code</a>
+            </article>
+            <article class="project" style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; max-width: 48%; text-align: center;">
+                <h3>CreditCardAnalysis</h3>
+                <img src="images/cardAnalyis.jpg" alt="Screenshot of public-holidays Analysis project" style="width: 90%; height: 220px; object-fit: cover; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 18px;">
+                <p>
+                This project uses SQL to analyze Consumer Credit Card usage data. The goal of the project is to answer a set of questions about credit card usage and consumer spending habits.
+                </p>
+                <p><strong>Technologies used:</strong> MySQL</p> 
+                <a href="https://github.com/OGTB/CreditCardAnalysis" target="_blank">Source Code</a>
+            </article>
+            <article class="project" style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; max-width: 48%; text-align: center;">
+                <h3>Little Lemon Restaurant Management System</h3>
+                <img src="images/restauran.jpg" alt="Screenshot of public-CreditCard Analysis project" style="width: 90%; height: 220px; object-fit: cover; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 18px;">
+                <p>
+                This project is designed to manage the operations of the Little Lemon fast-food restaurant and is a part of the Meta Database Engineer Certificate course on Coursera. The project uses MySQL for database modeling and Tableau for data analysis.
+                </p>
+                <p><strong>Technologies used:</strong> SQL, Tableau, Excel, Python, Pandas, Matplotlib</p> 
+                <a href="https://github.com/OGTB/database-capstone-project" target="_blank">Source Code</a>
+            </article>
+            <article class="project" style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; max-width: 48%; text-align: center;">
+                <h3>SQL</h3>
+                <img src="images/SQL_structure.jpg" alt="Screenshot of SQL_structure Project" style="width: 90%; height: 220px; object-fit: cover; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 18px;">
+                <p>
+                SQL, or Structured Query Language, is a standardized programming language specifically designed for managing and manipulating data within relational database management systems (RDBMS). It serves as the primary means of communication with these databases, allowing users to perform various operations
+                </p>
+                <p><strong>Technologies used:</strong> SQL</p> 
+                <a href="https://github.com/OGTB/python_higher_level_programming/tree/main/0x0D-SQL_introduction" target="_blank">Source Code</a>
+            </article>
+            <article class="project" style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; max-width: 48%; text-align: center;">
+                <h3>Advances SQL</h3>
+                <img src="images/sql-server-database-design.jpg" alt="Screenshot of public-holidays Analysis project" style="width: 90%; height: 220px; object-fit: cover; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 18px;">
+                <p>
+                SQL, or Structured Query Language, is a standardized programming language specifically designed for managing and manipulating data within relational database management systems (RDBMS). It serves as the primary means of communication with these databases, allowing users to perform various operations
+                </p>
+                <p><strong>Technologies used:</strong> SQL</p> 
+                <a href="https://github.com/OGTB/python_higher_level_programming/tree/main/0x0E-SQL_more_queries" target="_blank">Source Code</a>
+            </article>
+            <article class="project" style="flex: 1 1 45%; box-sizing: border-box; min-width: 300px; max-width: 48%; text-align: center;">
+                <h3>public-holidays Analysis 6</h3>
+                <img src="images/holiday.jpg" alt="Screenshot of public-holidays Analysis project" style="width: 90%; height: 220px; object-fit: cover; display: block; margin: 0 auto; border: 2px solid #333; border-radius: 18px;">
+                <p>
+                This data analysis project focus on analysing public holidays. The project likely aims to provide insights and trends about public holidays, enabling users to make informed decisions or predictions.
+                </p>
+                <p><strong>Technologies used:</strong> Python, Pandas, Matplotlib</p> 
+                <a href="https://www.kaggle.com/code/ogtb001/public-holidays-analysis" target="_blank">Source Code</a>
+            </article>
             </div>
         </section>
 
-        <section id="certifications" class="section certifications">
-            <h2><u>Certifications</u></h2>
-            <h2 class="certifications-">Please click to view the certificates - More certifications can be found here on my <a href="https://www.linkedin.com/in/ogaa/details/certifications/" target="_blank">linkedin</a> page</h2>
-            <ul class="certifications-list">
-                <li>
-                    <a href="https://coursera.org/verify/YZRXZUOTO7HZ" target="_blank">Supervised Machine Learning: Regression and
-                        Classification</a>
-                </li>
-                <li>
-                    <a href="https://www.udemy.com/certificate/UC-f5948c84-5a39-4a08-aa58-4ca154812009/" target="_blank">Anti-Money Laundering (AML), AML Policies, AML KYC & AML Compliance</a>
-                </li>
-                <li>
-                    <a href="https://www.udemy.com/certificate/UC-330a4da7-40ec-4b42-a07b-752339457ae3/" target="_blank">Introduction to Bitcoin & Crypto Assets</a>
-                </li>
-                <li>
-                    <a href="https://www.udemy.com/certificate/UC-e44f6841-501e-44b1-b521-158c9d79abeb/" target="_blank">Git Version Control</a>
-                </li>
-                <!-- Add more certifications -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <div class="skills-container" style="display: flex; flex-direction: row; gap: 32px; max-width: 900px; margin: 0 auto;">
+                    <div class="skill-category" style="flex: 1;">
+                        <h3 style="margin-bottom: 8px;">Programming & Data Analysis</h3>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Python (Pandas, NumPy, scikit-learn)</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">R</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">SQL (Oracle, MySQL, PostgreSQL, SQLite)</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Linux Command Line for automation (bash, cron)</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Git & Version Control (branching, merging, pull requests)</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Excel (Advanced Formulas, Pivot Tables, Power Query)</li>
+                        </ul>
+                        <h3 style="margin-bottom: 8px;">Statistical & Analytical Skills</h3>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Statistical Analysis</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Data Extraction</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Data Preprocessing</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Machine Learning</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category" style="flex: 1;">
+                        <h3 style="margin-bottom: 8px;">Data Visualization & BI</h3>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Matplotlib, Seaborn, Plotly</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Tableau, Power BI</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Reporting & Dashboarding</li>
+                        </ul>
+                        <h3 style="margin-bottom: 8px;">Risk & Compliance Analytics</h3>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Anti-Money Laundering (AML) Analytics</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Counter-Terrorist Financing (CTF) Monitoring</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">AML & Sanctions Screening</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Fraud Detection & Investigation</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Regulatory Reporting</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Risk Assessment</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Transaction Monitoring</li>
+                            <li onmouseover="this.style.color='red'" onmouseout="this.style.color='inherit'">Data Governance & Compliance</li>
+                        </ul>
+                    </div>
+                </div>
             </ul>
         </section>
 
-        <section id="education" class="section">
-            <h2><u>Education</u></h2>
-            <p><strong>Bachelor of Science in Mathematics (Statistics)</strong></p>
-            <p>Graduation Year: 2019</p>
-            <p>University of Nairobi, Kenya</p>
+        <section id="resume">
+            <h2>My Resume</h2>
+            <p>
+                For a detailed look at my experience, please download my resume.
+            </p>
+            <a href="downloads/tonny-brian-ogaa-resume.pdf"  download target="_blank">Download Resume (PDF)</a>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out!</p>
+            <p>Email: <a href="mailto:ogaatonny@gmail.com">ogaatonny@gmail.com</a></p>
+            <ul style="list-style: none; padding: 0; display: flex; gap: 18px;">
+                <li>
+                    <a href="https://www.linkedin.com/in/ogaa/" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#0077b5" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.37-1.54 2.82-1.54 3.01 0 3.57 1.98 3.57 4.56v5.62z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/OGTB/" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#181717" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.415-4.042-1.415-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.kaggle.com/ogtb001" target="_blank" style="display: flex; align-items: center; gap: 6px;">
+                        Kaggle
+                    </a>
+                </li>
+            </ul></svg>
+            </ul>
         </section>
     </main>
 
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/ogaa/" target="_blank" class="social-btn">LinkedIn</a>
-            <a href="https://github.com/OGTB/" target="_blank" class="social-btn">GitHub</a>
-        </div>
-        <p>Email: <a href="mailto:ogaatonny@gmail.com">ogaatonny@gmail.com</a></p>
+    <footer>
+        <p>&copy; <span id="year"></span> Tonny Ogaa. All Rights Reserved.</p>
     </footer>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-
-        // Automatic slideshow
-        setInterval(function() {
-            plusSlides(1);
-        }, 2000); // Change image every 2 seconds
-    </script>
-</body>
-</html>
+        <script src="script.js"></script>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Tonny Brian Ogaa</title>
+    <link rel="stylesheet" href="style.css"> <!-- Links to your main stylesheet for consistency -->
+    <style>
+        /* Gallery-specific styles */
+        .gallery-header {
+            background: #ffffff;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .gallery-header h1 {
+            color: #0056b3; /* Using primary color from your main CSS */
+            margin-bottom: 0.5rem;
+        }
+        .gallery-header a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .gallery-header a:hover {
+            color: #003d82;
+        }
+        .gallery-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .gallery-grid {
+            display: grid;
+            /* Creates a responsive grid that adjusts columns based on screen width */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative; /* Needed for caption positioning */
+            cursor: pointer;
+            height: 250px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images fill the container without distortion */
+            display: block;
+            transition: transform 0.4s ease-out;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: #ffffff;
+            padding: 2rem 1rem 1rem;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+            text-align: left;
+        }
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .caption h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="gallery-header">
+        <h1>Photo Gallery</h1>
+        <p>A collection of Certifications, moments and inspirations.</p>
+        <a href="index.html">&larr; Back to Portfolio</a>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <img src="images/me1.jpg" alt="myImage">
+                <div class="caption"><h3>PASSPORT PHOTO</h3></div>
+            </div>
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <img src="images/image/2.jpg" alt="TONNY OGAA">
+                <div class="caption"><h3>TONNY OGAA</h3></div>
+            </div>
+            <!-- Image 3 -->
+            <div class="gallery-item">
+                <img src="images/image/Data Analyst.jpg" alt="The Data Analyst Course: Complete Data Analyst Bootcamp">
+                <div class="caption"><h3>The Data Analyst Course: Complete Data Analyst Bootcamps</h3></div>
+            </div>
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <img src="images/image/Supervised Machine Learning Regression and Classification.jpg" alt="MachineLearning">
+                <div class="caption"><h3>Supervised Machine Learning: Regression and Classification</h3></div>
+            </div>
+            <!-- Image 5 -->
+            <div class="gallery-item">
+                <img src="images/image/AntiMoney Laundering .jpg" alt="AML">
+                <div class="caption"><h3>AntiMoney Laundering Concepts AML KYC and Compliance</h3></div>
+            </div>
+            <!-- Image 6 -->
+            <div class="gallery-item">
+                <img src="images/image/5.jpg" alt="Peter Mwangi">
+                <div class="caption"><h3>MLRO - Peter Mwangi</h3></div>
+            </div>
+             <!-- Image 7 -->
+             <div class="gallery-item">
+                <img src="images/image/Risk, Payments and Fraud.jpg" alt="Risk, Payments and Fraud">
+                <div class="caption"><h3>Risk, Payments and Fraud</h3></div>
+            </div>
+             <!-- Image 8 -->
+             <div class="gallery-item">
+                <img src="images/image/7.jpg" alt="A winding road through a forest">
+                <div class="caption"><h3>The Journey</h3></div>
+            </div>
+             <!-- Image 9 -->
+             <div class="gallery-item">
+                <img src="images/image/8.jpg" alt="A winding road through a forest">
+                <div class="caption"><h3>The Journey</h3></div>
+            </div>
+             <!-- Image 10 -->
+             <div class="gallery-item">
+                <img src="images/image/9.jpg" alt="A winding road through a forest">
+                <div class="caption"><h3>The Journey</h3></div>
+            </div>
+             <!-- Image 11 -->
+             <div class="gallery-item">
+                <img src="images/image/KYC Checks.jpg" alt="KYC CHECKS">
+                <div class="caption"><h3>KYC CHECKS</h3></div>
+            </div>
+             <!-- Image 12 -->
+             <div class="gallery-item">
+                <img src="images/image/fullstack.jpg" alt="Full Stack Developer">
+                <div class="caption"><h3>Full Stack Developer</h3></div>
+            </div>
+             <!-- Image 13 -->
+             <div class="gallery-item">
+                <img src="images/image/Python for Data Science, AI & Development.jpg" alt="Python for Data Science, AI & Development">
+                <div class="caption"><h3>Python for Data Science, AI & Development</h3></div>
+            </div>
+             <!-- Image 14 -->
+             <div class="gallery-item">
+                <img src="images/image/Data Analysis with R Programming.jpg" alt="Data Analysis with R Programming">
+                <div class="caption"><h3>Data Analysis with R Programming</h3></div>
+            </div>
+             <!-- Image 15 -->
+             <div class="gallery-item">
+                <img src="images/image/AWS Machine Learning Foundations.jpg" alt="AWS Machine Learning Foundations">
+                <div class="caption"><h3>AWS Machine Learning Foundations</h3></div>
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Tonny Ogaa. All Rights Reserved.</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
